@@ -27,6 +27,11 @@
             background: var(--white);
             color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         /* Navigation */
@@ -627,6 +632,87 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 14px 20px;
+            }
+
+            .nav-logo {
+                font-size: 22px;
+            }
+
+            .hero {
+                padding: 90px 20px 50px;
+            }
+
+            .hero-content {
+                gap: 32px;
+            }
+
+            .hero-text h1 {
+                font-size: 34px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-cta .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .services, .about, .clients, .contact {
+                padding: 60px 20px;
+            }
+
+            footer {
+                padding: 40px 20px 30px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .section-description {
+                font-size: 16px;
+            }
+
+            .service-card,
+            .contact-card {
+                padding: 30px 24px;
+            }
+
+            .about-image {
+                height: 320px;
+            }
+
+            .clients h2 {
+                font-size: 32px;
+            }
+
+            .footer-content {
+                gap: 24px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+
+            .stat-box {
+                padding: 24px 18px;
+            }
+
+            .stat-number {
+                font-size: 32px;
             }
         }
     </style>
